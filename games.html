@@ -1,0 +1,101 @@
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<title> All About Fire Emblem </title>
+		<script>
+		
+			function myFunction () {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "navcontainer") {
+				x.className += " responsive";
+			} 	
+			else {
+				x.className = "navcontainer";
+			}
+		}
+
+		</script>
+	</head>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+		<body>
+		
+		<header>
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+			<img src="images/snsLOGO.jpg" style="position: static; top: 20; left: 100;"><h1> History of Games </h1>
+		</header>
+		
+		
+		<center><div class="navcontainer" id="myTopnav">
+		<link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+		<a href="index.html">Home</a> 
+		<a href="games.html">Games</a> 
+		<a href="creators.html">Creation</a> 
+		<a href="creation.html">Spin-offs</a> 
+		<a href="sources.html">Other Sources</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> &#9776 </a>
+		</div></center>
+		
+			<div class="container">
+
+		<div class="title">
+		<link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+		There have been many games in the series, starting from Fire Emblem Shadow Dragon, Fire Emblem Gaiden, Fire Emblem Mystery of the Emblem, Fire Emblem Geneaology of the Holy War, Fire Emblem: Thracia 776, Fire Emblem: The Binding Blade, Fire Emblem: The Blazing Sword (the first game to come internationally), Fire Emblem: The Sacred Stones, Fire Emblem: Path of Radiance, Fire Emblem: Radiant Dawn, Fire Emblem: Shadow Dragon (2008), Fire Emblem Awakening, Fire Emblem Fates, and lastly Fire Emblem Echoes: Shadows of Valentia. While there are also spin-offs and a mobile game (Fire Emblem Heroes) knowing all of them is not necessary, and you should not be overwhelmed by all of them. The past games however are very difficult compared to the newer generations, so I recommend watching this video to help you choose. Lords featured are Leif, Roy, and Eliwood (up to down). <a href="https://www.youtube.com/watch?v=EdFO2cA7CmI">Click to watch the video here!</a>
+		</div>
+		
+		<div class="box4">
+		<center>
+		<img src="images/leif.png" id="leifS">
+		<img src="images/roy.png" id="royS">
+		<img src="images/eliwood.png" id="eliwoodS"></center>
+		</div>
+		
+		<div class="box4">
+		<p>4) Leif's story is intertwined with Seliph's story in a way because they're fighting in the same war but do not meet, but are technically allies. Leif's liberation army is there to keep fighting when Seliph has been exiled to continue the fight. Leif eventually meets up with Seliph's army and fight together until tjhe final battle. He appears in Fire Emblem Thracia 776 and FEH.</p>
+		
+		<p>5) Roy's game takes place years after his father's journey which we will talk about shortly, but essentially a kingdom next to theirs has invaded and is trying to seize them, but Roy fights back. Games appearances include Fire Emblem The Binding Blade and FEH.</p>
+		
+		<p>6) Eliwood is Roy's father, but his game takes place before he was even married. His game, Fire Emblem the Blazing Sword, shares two other protagonists, Lyn and Hector, which all have different stories, but Eliwood's is probably the most important because it dictates the future of what Roy's story will be... Other games he appears in is FEH.</p>
+		</div>
+		
+		</div>
+		<script> 
+		
+	var myLeif = document.querySelector('#leifS');
+	myLeif.onclick = function() 
+{
+	var mySrc = myLeif.getAttribute('src'); 
+	if(mySrc === 'images/leif.png') {
+		myLeif.setAttribute('src', 'images/leifS.png');
+	} else {
+	myLeif.setAttribute('src', 'images/leif.png'); }
+}
+
+
+	var myRoy = document.querySelector('#royS');
+	myRoy.onclick = function() 
+{
+	var mySrc = myRoy.getAttribute('src'); 
+	if(mySrc === 'images/roy.png') {
+		myRoy.setAttribute('src', 'images/royS.png');
+	} else {
+	myRoy.setAttribute('src', 'images/roy.png'); }
+}
+
+
+	var myEliwood = document.querySelector('#eliwoodS');
+	myEliwood.onclick = function() 
+{
+	var mySrc = myEliwood.getAttribute('src'); 
+	if(mySrc === 'images/eliwood.png') {
+		myEliwood.setAttribute('src', 'images/eliwoodS.png');
+	} else {
+	myEliwood.setAttribute('src', 'images/eliwood.png'); }
+}
+</script>
+		</body>
+		
+</html>

@@ -1,0 +1,144 @@
+<html>
+
+	<head>
+	<link rel="stylesheet" href="style.css" />
+		<meta charset="utf-8" />
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<title> All About Fire Emblem </title>
+		<script>
+		
+			function myFunction () {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "navcontainer") {
+				x.className += " responsive";
+			} 	
+			else {
+				x.className = "navcontainer";
+			}
+		}
+
+		</script>
+	</head>
+
+
+		<body>
+		
+		<audio
+		
+			
+			src="music/destiny.mp3"
+			loop="loop"
+			autoplay="autoplay"
+			>
+			
+		</audio>
+		
+		<header>
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<img src="images/snsLOGO.jpg" style="position: static; top: 20; left: 100;">	<h1> Fire Emblem Fansite </h1>
+		</header>
+		
+		<div class="navcontainer" id="myTopnav">
+		<link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+		<a href="index.html">Home</a> 
+		<a href="games.html">Games</a> 
+		<a href="creators.html">Creation</a> 
+		<a href="creation.html">Spin-offs</a> 
+		<a href="sources.html">Other Sources</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> &#9776; </a>
+		</div>
+		
+			<div class="container">
+			
+
+				<div class="title">
+				<link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+				Fire Emblem is a long-running game series that involves turn-based strategy with a  medevil-esque setting that touches upon the subject of politics and war. It's debut game started in 1990 and is still going strong presently, with many iterations in the games and has several other spin-offs, a mobile game, manga, and very short anime series. It's a tactical JRPG game with lots of variables making each playthrough different in some way or another, creating a replayability through all the games. On every page there will be a showcase of the lords of each game, starting with Marth, Alm, and Seliph (up to down).
+				
+				
+		<p><button id="myBtn">Open Me!</button></p>
+				
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>For All Your Needs!</h2>
+				<p><a href="http://fireemblem.wikia.com/wiki/Fire_Emblem_Wiki">Click if you wish to enter.</a></p>
+				<p>Have fun!</p>
+			</div>
+		</div>
+				
+			</div>
+				
+		
+			<div class="box4">
+			<center><img src="images/marth.png" id="marthS" class="resize">
+			<img src="images/alm.png" id="almS" class="resize">
+			<img src="images/seliph.png" id="seliphS" class="resize"></center>
+			</div>
+					
+			<div class="box4">
+			<p>1) Marth appears in several main-series games such as Fire Emblem Shadow Dragon and the Blade of Light, Fire Emblem: Mystery of the Emblem, Fire Emblem Shadow Dragon (2008), and Fire Emblem: Shin Monshō no Nazo: Hikari to Kage no Eiyū. He also appears in other games such as Fire Emblem Heroes, Fire Emblem Warriors, and has an anime dedicated towards his journey.</p>
+			
+			<p>2) Alm doesn't have as many apperances as he's only in Fire Emblem Gaiden and Fire Emblem Echoes: Shadows of Valentia, but also appears in Fire Emblem Heroes (FEH).</p>
+			
+			<p>3) Seliph's game isn't actually totally about him, as he's actually the second generation of the game as the first generation had a terrible fate, which made them throw the torch to their children. Games he's in is Fire Emblem Geneaology of the Holy War and FEH.</p>
+			</div>
+	
+    </div>
+		<script>
+		
+		var myMarth = document.querySelector('#marthS');
+	myMarth.onclick = function() 
+{
+	var mySrc = myMarth.getAttribute('src'); 
+	if(mySrc === 'images/marth.png') {
+		myMarth.setAttribute('src', 'images/marthS.png');
+	} else {
+	myMarth.setAttribute('src', 'images/marth.png'); }
+}
+
+	var myAlm = document.querySelector('#almS');
+	myAlm.onclick = function() 
+{
+	var mySrc = myAlm.getAttribute('src'); 
+	if(mySrc === 'images/alm.png') {
+		myAlm.setAttribute('src', 'images/almS.png');
+	} else {
+	myAlm.setAttribute('src', 'images/alm.png'); }
+}
+
+	var mySeliph = document.querySelector('#seliphS');
+	mySeliph.onclick = function() 
+{
+	var mySrc = mySeliph.getAttribute('src'); 
+	if(mySrc === 'images/seliph.png') {
+		mySeliph.setAttribute('src', 'images/seliphS.png');
+	} else {
+	mySeliph.setAttribute('src', 'images/seliph.png'); }
+}
+
+var modal = document.getElementById('myModal');
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+		
+		</script>
+		</body>
+	
+
+</html>

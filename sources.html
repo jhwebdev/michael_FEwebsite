@@ -1,0 +1,111 @@
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<title> All About Fire Emblem </title>
+		<script>
+		
+			function myFunction () {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "navcontainer") {
+				x.className += " responsive";
+			} 	
+			else {
+				x.className = "navcontainer";
+			}
+		}
+
+		</script>
+	</head>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+		<body>
+
+		
+		<header>
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+			<img src="images/snsLOGO.jpg" style="position: static; top: 20; left: 100;"> <h1> YouTubers </h1>
+		</header>
+		
+		<center><div class="navcontainer" id="myTopnav">
+		<link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+		<a href="index.html">Home</a> 
+		<a href="games.html">Games</a> 
+		<a href="creators.html">Creation</a> 
+		<a href="creation.html">Spin-offs</a> 
+		<a href="sources.html">Other Sources</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> &#9776 </a>
+		</div></center>
+		
+	<div class="container">
+
+		<div class="title2">	
+			<div class="left-column">
+				<link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+					There are lots of places to learn about this game, and lots of YouTubers that love to make videos about every subject about any of its games, there's such a rich history and lore that the limit is their imagination and there's lot of things to find so go out and find them! Here's a list of some I know to get you started: (Characters featured here are Sharena, Anna who's been in the series since the very first game, and Alfonse).<a href="https://www.youtube.com/watch?v=w4rNQ8PAhQ4&list=PL-UHDqcwcC4jFkDw6TyvDCVxlclcD8Cok"> Click to watch the video here!</a> 
+		
+		<ol><li><a href="https://www.youtube.com/channel/UCSKko3C1UxmwdR0J6hxUnpw">PheonixMaster1</a></li>
+		<li><a href="https://www.youtube.com/channel/UCEzWhKcoZh5-2eFA6Nfhh7A">SageMaster15</a></li>
+		<li><a href="https://www.youtube.com/channel/UCsd1MCV1hcPsFPbj9NBwCyw">Ghast</a></li>
+		<li><a href="https://www.youtube.com/channel/UCGf0lomSkryKdv0zVkzkgJw">LuckyCrit</a></li>
+		<li><a href="https://www.youtube.com/channel/UCsDtTzkvGxxw95C4IOfZ7dw">AbdallahSmash026</a></li></ol></div>
+		
+		</div>
+				
+		
+		<div class="box4">
+		<center>
+		<img src="images/sharena.png" id="sharenaS"></a>
+		<img src="images/anna.png" id="annaS"></a>
+		<img src="images/alfonse.png" id="alfonseS"></a></center>
+		</div>
+		
+		<div class="box4">
+		<p>13) Sharena is the princess of Askr, a kingdom able to open gates to open other kingdoms such as the Awakening world or Fates world, any world that has been in a past game really. Sharena only appears in FEH.</p>
+		
+		<p>14) Anna is a character that appears in every single game in the series, from the very first game to the latest. Anna is actually many characters, not just one, all in different realms essentially and they're all sisters... who look exactly alike and have the same name. Even though she appears in every game, she's only playable in Fire Emblem Awakening and Fire Emblem Fates, and is a main story character in FEH.</p>
+		
+		<p>15) Alfonse is the prince of Askr, a kingdom able to open gates to open other kingdoms such as the Awakening world or Fates world, any world that has been in a past game really. Alfonse only appears in FEH.</p>
+		</div>
+		
+		
+		</div>
+		
+		<script>
+		var mySharena = document.querySelector('#sharenaS');
+	mySharena.onclick = function() 
+{
+	var mySrc = mySharena.getAttribute('src'); 
+	if(mySrc === 'images/sharena.png') {
+		mySharena.setAttribute('src', 'images/sharenaS.png');
+	} else {
+	mySharena.setAttribute('src', 'images/sharena.png'); }
+}
+
+
+	var myAnna = document.querySelector('#annaS');
+	myAnna.onclick = function() 
+{
+	var mySrc = myAnna.getAttribute('src'); 
+	if(mySrc === 'images/anna.png') {
+		myAnna.setAttribute('src', 'images/annaS.png');
+	} else {
+	myAnna.setAttribute('src', 'images/anna.png'); }
+}
+
+
+	var myAlfonse = document.querySelector('#alfonseS');
+	myAlfonse.onclick = function() 
+{
+	var mySrc = myAlfonse.getAttribute('src'); 
+	if(mySrc === 'images/alfonse.png') {
+		myAlfonse.setAttribute('src', 'images/alfonseS.png');
+	} else {
+	myAlfonse.setAttribute('src', 'images/alfonse.png'); }
+}
+		</script>
+		</body>
+		
+</html>

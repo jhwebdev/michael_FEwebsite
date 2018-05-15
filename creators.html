@@ -1,0 +1,110 @@
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<title> All About Fire Emblem </title>
+		
+		<script>
+		
+			function myFunction () {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "navcontainer") {
+				x.className += " responsive";
+			} 	
+			else {
+				x.className = "navcontainer";
+			}
+		}
+
+		</script>
+	</head>
+<link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+		<body>
+		
+		<audio
+		
+			
+			src="music/destiny.mp3"
+			loop="loop"
+			autoplay="autoplay"
+			>
+			
+		</audio>
+		
+		<header>
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+			<img src="images/snsLOGO.jpg" style="position: static; top: 20; left: 100;"><h1> Creation of Fire Emblem </h1>
+		</header>
+		
+		<center><div class="navcontainer" id="myTopnav">
+		<link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+		<a href="index.html">Home</a> 
+		<a href="games.html">Games</a> 
+		<a href="creators.html">Creation</a> 
+		<a href="creation.html">Spin-offs</a> 
+		<a href="sources.html">Other Sources</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> &#9776 </a>
+		</div></center>
+		
+			<div class="container">
+
+		<div class="title">
+		
+		<p>Fire Emblem doesn't have a happy story with its creator, as he left Nintendo to make a new game similar to Fire Emblem but with a different company but Nintendo sued them and won since the game was similar in titles and gameplay. Fire Emblem however is still growing as a series (even as far as to becoming a featured game) and has new fans every game so the series going away won't be a problem. An in-depth history that goes along for two hours will be linked down below since it's too long to put here. Lords featured are Eirika, Ephraim, and Ike (up to down). <a href="https://www.youtube.com/watch?v=V3QT39JwDs8">Click to watch the video here!</a></p>
+		
+		</div>
+		
+		<div class="box4">
+		<center><img src="images/eirika.png" id="eirikaS"></a>
+		<img src="images/ephraim.png" id="ephraimS"></a>
+		<img src="images/ike.png" id="ikeS"></a></center>
+		</div>
+		
+		<div class="box4">
+		<p>7) Eirika is from the kingdom of Renais and is twin to Prince Ephraim (below). Their story is that a neighbouring kingdom which were good allies suddenly turned on them and attacked all kingdoms around for no reason, so they have to fight back and figure out what's going on, as one of their dear friends is the prince of the hostile kingdom. Eirika was in the capital as the kingdom besieged them.</p>
+		
+		<p>8) As previously stated, Ephraim is brother to Princess Eirika, however he was in the enemy's territory as the opposing kingdom was invading. He was short on supplies, only had four men, of which one was injured, and managed to take a fort full of enemies with three people. Both appear in one game, Fire Emblem The Sacred Stones and FEH.</p>
+		
+		<p>9) Ike is part of his father's mercenary group, The Greil Mercenaries. One day in the night, he sees his father get killed by an armoured man and vows to kill the armoured man. He takes control of the mercenary group and goes fighting wars and battles he doesn't need to participate in, but does so anyways to become stronger. He appears in two main games, Fire Emblem Path of Radiance and Fire Emblem Radiant Dawn, as well as FEH.</p>
+		</div>
+		
+		</div>
+		<script>
+		var myEphraim = document.querySelector('#ephraimS');
+	myEphraim.onclick = function() 
+{
+	var mySrc = myEphraim.getAttribute('src'); 
+	if(mySrc === 'images/ephraim.png') {
+		myEphraim.setAttribute('src', 'images/ephraimS.png');
+	} else {
+	myEphraim.setAttribute('src', 'images/ephraim.png'); }
+}
+
+
+	var myEirika = document.querySelector('#eirikaS');
+	myEirika.onclick = function() 
+{
+	var mySrc = myEirika.getAttribute('src'); 
+	if(mySrc === 'images/eirika.png') {
+		myEirika.setAttribute('src', 'images/eirikaS.png');
+	} else {
+	myEirika.setAttribute('src', 'images/eirika.png'); }
+}
+
+
+	var myIke = document.querySelector('#ikeS');
+	myIke.onclick = function() 
+{
+	var mySrc = myIke.getAttribute('src'); 
+	if(mySrc === 'images/ike.png') {
+		myIke.setAttribute('src', 'images/ikeS.png');
+	} else {
+	myIke.setAttribute('src', 'images/ike.png'); }
+}
+		</script>
+		</body>
+		
+</html>

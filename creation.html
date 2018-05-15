@@ -1,0 +1,111 @@
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<title> All About Fire Emblem </title>
+		<script>
+		
+			function myFunction () {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "navcontainer") {
+				x.className += " responsive";
+			} 	
+			else {
+				x.className = "navcontainer";
+			}
+		}
+
+		</script>
+	</head>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+		<body>
+		
+		<audio
+		
+			
+			src="music/destiny.mp3"
+			loop="loop"
+			autoplay="autoplay"
+			>
+			
+		</audio>
+		
+		<header>
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+			<img src="images/snsLOGO.jpg" style="position: static; top: 20; left: 100;"> <h1> Spin-Offs/Remakes </h1>
+		</header>
+		
+		<div class="navcontainer" id="myTopnav">
+		<link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+		<a href="index.html">Home</a> 
+		<a href="games.html">Games</a> 
+		<a href="creators.html">Creation</a> 
+		<a href="creation.html">Spin-offs</a> 
+		<a href="sources.html">Other Sources</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> &#9776 </a>
+		</div>
+		
+			<div class="container">
+
+		<div class="title2">
+		<link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+		There have been a couple of remakes of games in the series, such as Fire Emblem Echoes being a remake of Fire Emblem Gaiden, and it follows the game perfectly, to the point where they kept in the original glitches. Another remake is the remake of the first and third games of the franchise, which didn't really gain much traction in the west. However, we also had a couple spin-offs in the series with Fire Emblem Warriors, which is just a beat them up game, Fire Emblem Heroes which is a mobile game that came out in February 2017 and is still a very popular mobile game even as to winning best mobile game of the year. Characters featured here are Micaiah, Robin, and Corrin(up to down).
+		
+		
+		</div>
+		
+		<div class="box4">
+		<center>
+		<img src="images/micaiah.png" id="micaiahS"></a>
+		<img src="images/robin.png" id="robinS"></a>
+		<img src="images/corrin.png" id="corrinS"></a></center>
+		</div>
+		
+		<div class="box4">
+		<p>10) Micaiah is a very odd individual, and is very hard to explain as it'll give away lots of the story. Essentially, she's fighting to liberate her country. Her game takes place two years after Ike's game, in which he also appears in this game. She appears only in Path of Radiance and FEH.</p>
+		
+		<p>11) Robin is a character based on you, so his or her gender will differ through everyone's playthrough. They start out in a field with no memory of where they came from. Fortunately, they're found by the prince of the kingdom and his sister and retainer. Robin becomes a tactician in the army and a soldier, becoming a potent threat to enemies. There's a lot to uncover about Robin, but you can learn more as they appear in Fire Emblem Awakening and FEH.</p>
+		
+		<p>12) Corrin is a character that originally hailed form the kingdom of Hoshido, but as a child was kidnapped from the opposing kingdom of Nohr. Corrin doesn't remember much from his childhood as they were taken as a baby. They're also a character based on your gender just like Robin. They lived as a sheltered prince/princess in a castle for most of his life, until one day his life changes entirely. Games they appear in is Fire Emblem Fates and FEH.</p>
+		</div>
+		
+			</div>
+		<script>
+		var myMicaiah = document.querySelector('#micaiahS');
+	myMicaiah.onclick = function() 
+{
+	var mySrc = myMicaiah.getAttribute('src'); 
+	if(mySrc === 'images/micaiah.png') {
+		myMicaiah.setAttribute('src', 'images/micaiahS.png');
+	} else {
+	myMicaiah.setAttribute('src', 'images/micaiah.png'); }
+}
+
+
+	var myRobin = document.querySelector('#robinS');
+	myRobin.onclick = function() 
+{
+	var mySrc = myRobin.getAttribute('src'); 
+	if(mySrc === 'images/robin.png') {
+		myRobin.setAttribute('src', 'images/robinS.png');
+	} else {
+	myRobin.setAttribute('src', 'images/robin.png'); }
+}
+
+
+	var myCorrin = document.querySelector('#corrinS');
+	myCorrin.onclick = function() 
+{
+	var mySrc = myCorrin.getAttribute('src'); 
+	if(mySrc === 'images/corrin.png') {
+		myCorrin.setAttribute('src', 'images/corrinS.png');
+	} else {
+	myCorrin.setAttribute('src', 'images/corrin.png'); }
+}
+		</script>
+		</body>
+		
+</html>
